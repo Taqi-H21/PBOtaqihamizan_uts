@@ -13,7 +13,7 @@ public class DemoLibraryManagementMain {
 
         do {
             System.out.println("\n--- Menu Peminjaman dan Pengembalian Buku ---");
-            System.out.println("1. Pendaftaran");
+            System.out.println("1. Pendataan");
             System.out.println("2. Tampilan Peminjaman dan Pengembalian Buku");
             System.out.println("3. Keluar");
             System.out.print("\nMasukkan pilihan Anda: ");
@@ -38,7 +38,7 @@ public class DemoLibraryManagementMain {
         input.close();
 	}
 	public static void inputData(Scanner input, List<theLibrary> pinjamsetor) {
-        System.out.println("\n--- PENDAFTARAN ---");
+        System.out.println("\n--- PENDATAAN ---");
         
         System.out.print("Masukkan Nama Anggota: ");
         String anggota = input.nextLine();
@@ -61,7 +61,7 @@ public class DemoLibraryManagementMain {
         System.out.println("Data " + state + " buku berhasil disimpan!");		
 	}
 	public static void tampilkanData(List<theLibrary> pinjamsetor) {
-        System.out.println("\n--- TAMPILAN PEMINJAMAN DAN PENGEMBALIAN BUKU (" + pinjamsetor.size() + " data) ---");
+        System.out.println("\n--- DAFTAR PEMINJAMAN DAN PENGEMBALIAN BUKU (" + pinjamsetor.size() + " data) ---");
         
         if (pinjamsetor.isEmpty()) {
             System.out.println("Belum ada data peminjaman dan pengembalian buku.");
